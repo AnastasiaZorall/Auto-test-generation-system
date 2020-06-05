@@ -42,7 +42,7 @@
 # Анализ существующих технических решений
 
 Рассмотрим различные аналоги генератора тестов.
-
+[Knowing]
 1. [Knowing]:http://www.globalpage.ru/ (рис. 1)
 
 ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing1.png) ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing2.png) 
