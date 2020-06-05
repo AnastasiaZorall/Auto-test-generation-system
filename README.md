@@ -262,7 +262,7 @@ Moodle (Modular Object-Oriented Dynamic Learning Environment) - бесплатн
 
 1. Главное окно для выбора раздела
   
-  < window = Tk()>
+```window = Tk()>
 
   window.geometry(&#39;400x250&#39;)
 
@@ -273,6 +273,7 @@ Moodle (Modular Object-Oriented Dynamic Learning Environment) - бесплатн
   combo.place(x=10, y=10)
 
   mainloop()
+  ```
 
 Основной часть главного окна является Combobox, позволяющий пользователю выбрать раздел из 3 представленных вариантов. После выбора начинает работу функция get\_selected, описанная в следующем разделе.
 
