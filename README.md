@@ -28,42 +28,6 @@
 
 Объем данной работы составляет 27 страниц, включая 12 рисунков и 1 таблицу.
 
-**Annotation**
-
-The main goal of course work:
-
-To develop a system for automatic generation of tests in the discipline &quot;Informatics&quot; and implement the issuance of test materials in a text editor Word.
-
-Also there are plans to introduce this system into the educational process and use students to study computer science in order to generate tests.
-
-The following tasks were set for me:
-
-1. Overview of test generation system analogues
-
-2. The choice of software
-
-3. Ergonomic user interface development
-
-4. Programming tests on specified sections
-
-5. Issue of test materials in a Word document
-
-6. Issuing answers to test materials
-
-The course work process allows to learn more in-depth Python programming language, learn how to work with Tkinter graphic library for the window interface and the python-docx module for working with Word documents. In addition, experience in creating a User Friendly interface was gained, as well as in grouping individual task topics into semantic sections.
-
-Each of the tasks was tested; The answers suggested by the system turned out to be correct.
-
-The developed system has the following advantages compared to existing analogues:
-
-- Targeting - focus on tasks used specifically at the Higher School of Economics for the study of the discipline &quot;Computer Science&quot;;
-- User support - Minimizing the possibility of user error;
-- User friendly - the maximum simplicity and convenience of the interface;
-- Multivariance - the ability to get an almost unlimited number of test options, thanks to the use of the random number selection function;
-- Editable - the issuance of options for testing in a convenient form for editing;
-- Completeness - issuing answers to all received options.
-
-This work consists of 27 pages, including 12 pictures and 1 table.
 
 # Содержание
 
@@ -297,8 +261,8 @@ Moodle (Modular Object-Oriented Dynamic Learning Environment) - бесплатн
 # Описание создания программного интерфейса
 
 1. Главное окно для выбора раздела
-
-  window = Tk()
+  
+  < window = Tk()>
 
   window.geometry(&#39;400x250&#39;)
 
