@@ -47,7 +47,7 @@
 
 ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing1.png) ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing2.png) 
 
-Рис. 1. - Внешний вид программы Knowing.
+Рис. 1 a, б. - Внешний вид программы Knowing.
 
 Knowing – программа для создания тестов. Данная программа может использоваться для создания тестов по любым темам. Выделим основные особенности:
 
@@ -77,7 +77,7 @@ Knowing – программа для создания тестов. Данна�
 
 ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/ADTester1.png) ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/ADTester2.png)
 
-Рис. 2. - Внешний вид программы ADTester.
+Рис. 2 а, б. - Внешний вид программы ADTester.
 
 Программы пакета:
 
