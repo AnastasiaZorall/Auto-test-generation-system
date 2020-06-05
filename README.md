@@ -45,7 +45,7 @@
 
 1. **Knowing**** 1****(рис. 1)**
 
-![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing1.png) ![](RackMultipart20200605-4-66draq_html_9d9e8946d363440f.png) 
+![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing1.png) ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing2.png) 
 
 Рис. 1. - Внешний вид программы Knowing.
 
@@ -75,7 +75,7 @@ Knowing – программа для создания тестов. Данна�
 
 1. **ADTester**** 2 **** (рис. 2)**
 
-![](RackMultipart20200605-4-66draq_html_774aa7f26308d922.png) ![](RackMultipart20200605-4-66draq_html_9adc1531bbafeb2c.png)
+![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/ADTester1.png) ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/ADTester2.png)
 
 Рис. 2. - Внешний вид программы ADTester.
 
