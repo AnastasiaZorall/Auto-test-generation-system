@@ -45,7 +45,7 @@
 
 1. **Knowing**** 1****(рис. 1)**
 
-![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing1.png) ![](RackMultipart20200605-4-66draq_html_9d9e8946d363440f.png) 
+![]() ![](RackMultipart20200605-4-66draq_html_9d9e8946d363440f.png) 
 
 Рис. 1. - Внешний вид программы Knowing.
 
