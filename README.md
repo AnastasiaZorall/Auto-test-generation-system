@@ -263,89 +263,63 @@ Moodle (Modular Object-Oriented Dynamic Learning Environment) - бесплатн
 1. Главное окно для выбора раздела
   
 ```window = Tk()
-  window.geometry(&#39;400x250&#39;)
-  combo = Combobox(values=["Действия с числами в разных СС", &quot;Алгебра логики&quot;, &quot;Формулы комбинаторики&quot;], width=30)
-  combo.bind(&#39;\&lt;\&lt;ComboboxSelected\&gt;\&gt;&#39;, get\_selected)
+  window.geometry('400x250')
+  combo = Combobox(values=["Действия с числами в разных СС", "Алгебра логики", "Формулы комбинаторики"], width=30)
+  combo.bind('<<ComboboxSelected>>', get_selected)
   combo.place(x=10, y=10)
   mainloop()
   ```
 
-Основной часть главного окна является Combobox, позволяющий пользователю выбрать раздел из 3 представленных вариантов. После выбора начинает работу функция get\_selected, описанная в следующем разделе.
+Основной часть главного окна является Combobox, позволяющий пользователю выбрать раздел из 3 представленных вариантов. После выбора начинает работу функция get_selected, описанная в следующем разделе.
 
-1. Общие параметры окон для формирования заданий по каждому из разделов
-
-window1.geometry(&#39;1200x600&#39;)
-
-btnputinfile = Button(window1, text=&quot;OK&quot;, font=14, command=put\_filename, foreground=&quot;#000080&quot;)
-
+2. Общие параметры окон для формирования заданий по каждому из разделов
+```
+window1.geometry('1200x600')
+btnputinfile = Button(window1, text="OK:, font=14, command=put_filename, foreground="#000080")
 btnputinfile.place(x=750, y=20)
-
-btnClose=Button(window1, text=&quot;Закрыть&quot;, font=14, сommand= window1.destroy, foreground=&quot;#000080&quot;)
-
+btnClose=Button(window1, text="Закрыть", font=14, сommand=window1.destroy, foreground="#000080")
 btnClose.place(x=20, y=500)
-
-lbl2 = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&quot;ТЕМА &quot;)
-
+lbl2 = Label(window1, font=("Arial Bold", 14), text="ТЕМА")
 lbl2.place(x=10, y=100)
-
-lbl3 = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&quot;КОЛ-ВОЗАДАНИЙВЫБРАТЬ&quot;)
-
+lbl3 = Label(window1, font=("Arial Bold", 14), text="КОЛ-ВО ЗАДАНИЙ     ВЫБРАТЬ")
 lbl3.place(x=600, y=100)
-
 window1.mainloop()
-
+```
 Приведённый выше код создаёт общий вид оконной формы, он универсален для всех трех разделов.
 
-1. Ввод имени файла
-
+3. Ввод имени файла
+```
 fn = Entry(window1, width=40)
-
-fn.focus\_set()
-
+fn.focus_set()
 fn.place(x=390, y=30)
-
-lbl8 = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&quot;Название файла для записи&quot;)
-
+lbl8 = Label(window1, font=("Arial Bold", 14), text="Название файла для записи")
 lbl8.place(x=100, y=30)
-
-lbl9 = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&quot;.docx&quot;)
-
+lbl9 = Label(window1, font=("Arial Bold", 14), text=".docx")
 lbl9.place(x=640, y=30)
-
+```
 Данный код создаёт место, куда пользователь будет вводить название файла. Так же сразу после места для ввода указано расширение, чтобы показать, что его можно не вводить, а оно будет задано автоматически.
 
-1. Добавление названия заданий (приведён пример для третьего раздела)
-
-lbl4 = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&quot;Сочетаниябезповторений&quot;)
-
-lbl5 = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&quot;Сочетания c повторениями&quot;)
-
-lbl6 = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&quot;Размещениясповторениями&quot;)
-
-lbl7 = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&quot;Размещениябезповторений&quot;)
-
+4. Добавление названия заданий (приведён пример для третьего раздела)
+```
+lbl4 = Label(window1, font=("Arial Bold", 14), text="Сочетания без повторений")
+lbl5 = Label(window1, font=("Arial Bold", 14), text="Сочетания c повторениями")
+lbl6 = Label(window1, font=("Arial Bold", 14), text="Размещения с повторениями")
+lbl7 = Label(window1, font=("Arial Bold", 14), text="Размещения без повторений")
 lbl4.place(x=10, y=210)
-
 lbl5.place(x=10, y=270)
-
 lbl6.place(x=10, y=330)
-
 lbl7.place(x=10, y=390)
-
+```
 В данном случае создается 4 надписи, для которых затем задается расположение в окне.
 
-1. В третьем разделе помимо названия задания используется формула, которая в нём используется. Приведён пример вставки формулы в окно.
-
-path4 = &#39;rbp.jpg&#39;
-
+5. В третьем разделе помимо названия задания используется формула, которая в нём используется. Приведён пример вставки формулы в окно.
+```
+path4 = 'rbp.jpg'
 img4 = ImageTk.PhotoImage(Image.open(path4))
-
 panel4 = tk.Label(window1, image=img4)
-
-panel4.pack(side=&quot;bottom&quot;, fill=&quot;both&quot;, expand=&quot;yes&quot;)
-
+panel4.pack(side="bottom", fill="both", expand="yes")
 panel4.place(x=300, y=380)
-
+```
 Для вставки формулы было принято решение использовать изображение из-за максимальной простоты работы с ним. При необходимости поместить другое изображение, размещенное на компьютере пользователя, достаточно изменить path4.
 
 # Описание работы ключевых фрагментов программы
@@ -355,90 +329,62 @@ panel4.place(x=300, y=380)
 Обратим внимание на ключевые фрагменты, определяющие работоспособность системы.
 
 1. Функция добавления задания и ответа к нему в соответствующие файлы
-
-def input\_file\_docx(str\_write, str\_answer):
-
-paragraph = dti.add\_paragraph(str\_write)
-
-paragraph\_format = paragraph.paragraph\_format
-
-paragraph\_format.space\_after = Pt(1.0)
-
-paragraph = dti1.add\_paragraph(str\_answer)
-
-paragraph\_format = paragraph.paragraph\_format
-
-paragraph\_format.space\_after = Pt(1.0)
-
+```
+def input_file_docx(str_write, str_answer):
+paragraph = dti.add_paragraph(str_write)
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_after = Pt(1.0)
+paragraph = dti1.add_paragraph(str_answer)
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_after = Pt(1.0)
+```
 Данная функция вызывается в конце работы функций, автоматически генерирующих задания с ответами по заданной теме. Она взаимодействует непосредственно с файлом .docx, записывая в него строки, поданные на вход функции.
 
-1. Функция, добавляющая графу для записи имени, группы и даты проведения работы в файл, создающийся для учащегося
-
-def fio\_add(dti):
-
-paragraph = dti.add\_paragraph(&#39;Фамилия, Имя, Группа&#39; + &#39;\_&#39; \* 72)
-
-paragraph\_format = paragraph.paragraph\_format
-
-paragraph\_format.space\_after = Pt(3.0)
-
-paragraph = dti.add\_paragraph(&#39;Датавыполнения&#39; + &#39;\_&#39; \* 80 + &#39;\n&#39;)
-
-paragraph\_format = paragraph.paragraph\_format
-
-paragraph\_format.space\_after = Pt(2.0)
-
+2. Функция, добавляющая графу для записи имени, группы и даты проведения работы в файл, создающийся для учащегося
+```
+def fio_add(dti):
+paragraph = dti.add_paragraph('Фамилия, Имя, Группа' + '_'* 72)
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_after = Pt(3.0)
+paragraph = dti.add_paragraph('Дата выполнения' + '_'* 80 + '\n')
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_after = Pt(2.0)
+```
 Данная функция вызывается сразу после ввода пользователем имени файла и созданием программой файлов, взаимодействует непосредственно с файлами .docx, предназначенными для учащегося.
 
-1. Функция, регистрирующая нажатие на Checkbutton и запускающая соответствующую ему команду.
-
+3. Функция, регистрирующая нажатие на Checkbutton и запускающая соответствующую ему команду.
+```
 def flag(i, com, xi, yi):
-
-chk = Checkbutton(window1, variable=list\_cb[i], command=com)
-
+chk = Checkbutton(window1, variable=list_cb[i], command=com)
 chk.focus()
-
 chk.place(x=xi, y=yi)
-
 return
-
+```
 Данная функция используется для связи расположения checkbutton и команды, которая должна запускаться при его активации.
 
-1. Функции, обеспечивающие корректность вводимых данных
+4. Функции, обеспечивающие корректность вводимых данных
   1. Проверка является ли введенная строка натуральным числом
-
-def only\_int(p):
-
-if p.isdigit():
-
-return True
-
-return False
-
+```
+def only_int(p):
+  if p.isdigit():
+    return True
+  return False
+```
 На вход функции передаётся строка, которая проверяется на то, является ли она натуральным числом. На выход функции подаётся ложь или истина в зависимости от строки.
 
-  1. Функция, выводящая подсказку для пользователя о введении неверного значения строки
-
-def num\_check(xi, yi, li):
-
-&quot;&quot;&quot;
-
-Function put on a screen text if user try to put anything besides integer number
-
-lb\_f = Label(window1, font=(&quot;Arial Bold&quot;, 14), text=&#39;only integer number available&#39;)
-
-lb\_f.place(x=xi, y=yi)
-
-list\_cb[li].set(0)
-
-return
-
+  2. Функция, выводящая подсказку для пользователя о введении неверного значения строки
+```
+def num_check(xi, yi, li):
+  lb_f = Label(window1, font=("Arial Bold", 14), text='only integer number available')
+  lb_f.place(x=xi, y=yi)
+  list_cb[li].set(0)
+  return
+```
 Функция активируется в случае, если на выходе функции only\_int оказалось значение False. Подсказка выводится рядом с Checkbutton, соответствующему месту ввода неверного значения.
 
-1. Функция, определяющая какой из 3 файлов программ необходимо запустить для продолжения работы.
-
+5. Функция, определяющая какой из 3 файлов программ необходимо запустить для продолжения работы.
+```
 def get\_selected(param):
-
 icombo = combo.current() + 1
 
 if icombo == 1:
@@ -452,11 +398,11 @@ os.system(&#39;python part\_2\_otl\_1.py&#39;)
 else:
 
 os.system(&#39;python part\_3\_otl\_1.py&#39;)
-
+```
 Фиксируется номер по порядку выбранного раздела в combobox, и в зависимости от него запускается необходимая программа.
 
-1. Связующая функция для каждого из разделов. Приведён пример для третьего раздела.
-
+6. Связующая функция для каждого из разделов. Приведён пример для третьего раздела.
+```
 def combin():
 
 &quot;&quot;&quot;
@@ -482,7 +428,7 @@ flag(2, comp\_n\_k\_rep, 800, 275)
 flag(3, accom\_n\_k\_rep, 800, 335)
 
 flag(4, accom\_n\_k, 800, 395)
-
+```
 Данная функция считывает числа, введённые в поля question\_amount и последовательно вызывает функцию flag для каждого из заданий. В ходе выполнения данной функции в файлы заданий для учащихся и преподавателя добавляются выбранные задания, если значения, введёные в question\_amount являются натуральными числами, иначе для каждой ошибочно введённой строки необходимо повторить ввод.
 
 # Заключение
