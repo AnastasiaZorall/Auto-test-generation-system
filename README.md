@@ -298,17 +298,17 @@ Moodle (Modular Object-Oriented Dynamic Learning Environment) - бесплатн
 
 1. Главное окно для выбора раздела
 
-window = Tk()
+  window = Tk()
 
-window.geometry(&#39;400x250&#39;)
+  window.geometry(&#39;400x250&#39;)
 
-combo = Combobox(values=[&quot;Действия с числами в разных СС &quot;, &quot;Алгебра логики&quot;, &quot;Формулы комбинаторики&quot;], width=30)
+  combo = Combobox(values=[&quot;Действия с числами в разных СС &quot;, &quot;Алгебра логики&quot;, &quot;Формулы комбинаторики&quot;], width=30)
 
-combo.bind(&#39;\&lt;\&lt;ComboboxSelected\&gt;\&gt;&#39;, get\_selected)
+  combo.bind(&#39;\&lt;\&lt;ComboboxSelected\&gt;\&gt;&#39;, get\_selected)
 
-combo.place(x=10, y=10)
+  combo.place(x=10, y=10)
 
-mainloop()
+  mainloop()
 
 Основной часть главного окна является Combobox, позволяющий пользователю выбрать раздел из 3 представленных вариантов. После выбора начинает работу функция get\_selected, описанная в следующем разделе.
 
