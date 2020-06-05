@@ -331,34 +331,34 @@ panel4.place(x=300, y=380)
 1. Функция добавления задания и ответа к нему в соответствующие файлы
 ```
 def input_file_docx(str_write, str_answer):
-paragraph = dti.add_paragraph(str_write)
-paragraph_format = paragraph.paragraph_format
-paragraph_format.space_after = Pt(1.0)
-paragraph = dti1.add_paragraph(str_answer)
-paragraph_format = paragraph.paragraph_format
-paragraph_format.space_after = Pt(1.0)
+  paragraph = dti.add_paragraph(str_write)
+  paragraph_format = paragraph.paragraph_format
+  paragraph_format.space_after = Pt(1.0)
+  paragraph = dti1.add_paragraph(str_answer)
+  paragraph_format = paragraph.paragraph_format
+  paragraph_format.space_after = Pt(1.0)
 ```
 Данная функция вызывается в конце работы функций, автоматически генерирующих задания с ответами по заданной теме. Она взаимодействует непосредственно с файлом .docx, записывая в него строки, поданные на вход функции.
 
 2. Функция, добавляющая графу для записи имени, группы и даты проведения работы в файл, создающийся для учащегося
 ```
 def fio_add(dti):
-paragraph = dti.add_paragraph('Фамилия, Имя, Группа' + '_'* 72)
-paragraph_format = paragraph.paragraph_format
-paragraph_format.space_after = Pt(3.0)
-paragraph = dti.add_paragraph('Дата выполнения' + '_'* 80 + '\n')
-paragraph_format = paragraph.paragraph_format
-paragraph_format.space_after = Pt(2.0)
+  paragraph = dti.add_paragraph('Фамилия, Имя, Группа' + '_'* 72)
+  paragraph_format = paragraph.paragraph_format
+  paragraph_format.space_after = Pt(3.0)
+  paragraph = dti.add_paragraph('Дата выполнения' + '_'* 80 + '\n')
+  paragraph_format = paragraph.paragraph_format
+  paragraph_format.space_after = Pt(2.0)
 ```
 Данная функция вызывается сразу после ввода пользователем имени файла и созданием программой файлов, взаимодействует непосредственно с файлами .docx, предназначенными для учащегося.
 
 3. Функция, регистрирующая нажатие на Checkbutton и запускающая соответствующую ему команду.
 ```
 def flag(i, com, xi, yi):
-chk = Checkbutton(window1, variable=list_cb[i], command=com)
-chk.focus()
-chk.place(x=xi, y=yi)
-return
+  chk = Checkbutton(window1, variable=list_cb[i], command=com)
+  chk.focus()
+  chk.place(x=xi, y=yi)
+  return
 ```
 Данная функция используется для связи расположения checkbutton и команды, которая должна запускаться при его активации.
 
@@ -380,56 +380,34 @@ def num_check(xi, yi, li):
   list_cb[li].set(0)
   return
 ```
-Функция активируется в случае, если на выходе функции only\_int оказалось значение False. Подсказка выводится рядом с Checkbutton, соответствующему месту ввода неверного значения.
+Функция активируется в случае, если на выходе функции only_int оказалось значение False. Подсказка выводится рядом с Checkbutton, соответствующему месту ввода неверного значения.
 
 5. Функция, определяющая какой из 3 файлов программ необходимо запустить для продолжения работы.
 ```
-def get\_selected(param):
-icombo = combo.current() + 1
-
-if icombo == 1:
-
-os.system(&#39;python part\_1\_otl\_1.py&#39;)
-
-elif icombo == 2:
-
-os.system(&#39;python part\_2\_otl\_1.py&#39;)
-
-else:
-
-os.system(&#39;python part\_3\_otl\_1.py&#39;)
+def get_selected(param):
+  icombo = combo.current() + 1
+  if icombo == 1:
+    os.system('python part_1_otl_1.py')
+  elif icombo == 2:
+    os.system('python part_2_otl_1.py')
+  else:
+    os.system('python part_3_otl_1.py')
 ```
 Фиксируется номер по порядку выбранного раздела в combobox, и в зависимости от него запускается необходимая программа.
 
 6. Связующая функция для каждого из разделов. Приведён пример для третьего раздела.
 ```
 def combin():
-
-&quot;&quot;&quot;
-
-Function reads number from question\_amount and launches the desired function
-
-:return:
-
-&quot;&quot;&quot;
-
-question\_amount\_1.place(x=550, y=215)
-
-question\_amount\_2.place(x=550, y=275)
-
-question\_amount\_3.place(x=550, y=335)
-
-question\_amount\_4.place(x=550, y=395)
-
-flag(1, comb\_n\_k, 800, 215)
-
-flag(2, comp\_n\_k\_rep, 800, 275)
-
-flag(3, accom\_n\_k\_rep, 800, 335)
-
-flag(4, accom\_n\_k, 800, 395)
+  question_amount_1.place(x=550, y=215)
+  question_amount_2.place(x=550, y=275)
+  question_amount_3.place(x=550, y=335)
+  question_amount_4.place(x=550, y=395)
+  flag(1, comb_n_k, 800, 215)
+  flag(2, comp_n_k_rep, 800, 275)
+  flag(3, accom_n_k_rep, 800, 335)
+  flag(4, accom_n_k, 800, 395)
 ```
-Данная функция считывает числа, введённые в поля question\_amount и последовательно вызывает функцию flag для каждого из заданий. В ходе выполнения данной функции в файлы заданий для учащихся и преподавателя добавляются выбранные задания, если значения, введёные в question\_amount являются натуральными числами, иначе для каждой ошибочно введённой строки необходимо повторить ввод.
+Данная функция считывает числа, введённые в поля question_amount и последовательно вызывает функцию flag для каждого из заданий. В ходе выполнения данной функции в файлы заданий для учащихся и преподавателя добавляются выбранные задания, если значения, введёные в question_amount являются натуральными числами, иначе для каждой ошибочно введённой строки необходимо повторить ввод.
 
 # Заключение
 
