@@ -104,7 +104,7 @@ Knowing – программа для создания тестов. Данна�
 
 3. [Moodle](https://moodle.org/) (рис.3)
 
-![](RackMultipart20200605-4-66draq_html_91926678d37cb4bc.jpg) ![](RackMultipart20200605-4-66draq_html_e6e0575b47004f9a.png)
+![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/moodle1.jpg) ![](RackMultipart20200605-4-66draq_html_e6e0575b47004f9a.png)
 
 Рис. 3. - Внешний вид системы Moodle.
 
