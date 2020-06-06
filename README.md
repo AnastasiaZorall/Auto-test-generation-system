@@ -43,7 +43,8 @@
 
 Рассмотрим различные аналоги генератора тестов.
 
-1. [Knowing] [Knowing]:http://www.globalpage.ru/ (рис. 1)
+1. [Knowing]  (рис. 1)
+[Knowing]:http://www.globalpage.ru/
 
 ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing1.png) ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/knowing2.png) 
 
