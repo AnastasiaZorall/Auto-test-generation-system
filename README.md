@@ -184,9 +184,7 @@ Moodle (Modular Object-Oriented Dynamic Learning Environment) - бесплатн
 
 ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/work2.png)
 
-Рис. 5. Оконная форма для формирования заданий по теме
-
-«Действия с числами в разных системах счисления»
+Рис. 5. Оконная форма для формирования заданий по теме «Действия с числами в разных системах счисления»
 
 ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/work3.png)
 
@@ -194,9 +192,7 @@ Moodle (Modular Object-Oriented Dynamic Learning Environment) - бесплатн
 
 ![](https://github.com/AnastasiaZorall/Auto-test-generation-system/blob/master/images/work4.png)
 
-Рис 7. Оконная форма для формирования заданий по теме
-
-«Формулы комбинаторики».
+Рис 7. Оконная форма для формирования заданий по теме «Формулы комбинаторики».
 
 Каждый из вариантов может содержать более одного задания по необходимой теме. Количество заданий определяется пользователем во время формирования вариантов. Для ввода количества заданий необходимо вписать натуральное число в предназначенную для этого ячейку (рис. 8).
 
